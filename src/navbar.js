@@ -7,7 +7,6 @@ const menu = document.createElement('li');
 const contact = document.createElement('li');
 
 about.innerHTML = 'About';
-// home.classList.add('active');
 menu.innerHTML = 'Menu';
 contact.innerHTML = 'Contact';
 
