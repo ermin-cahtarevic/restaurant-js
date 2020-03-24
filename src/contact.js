@@ -23,7 +23,7 @@ h3.classList.add('tagline');
 h3.innerText = 'Contact';
 
 h4.classList.add('contact-text');
-h4.innerText = 'Do you have a question, or suggestion?'
+h4.innerText = 'Do you have a question, or suggestion?';
 
 topInput.classList.add('top-input');
 form.classList.add('form');

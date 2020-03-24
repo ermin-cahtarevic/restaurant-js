@@ -6,7 +6,7 @@ import menuContent from './menu';
 import contactContent from './contact';
 
 const main = document.createElement('div');
-main.classList.add('content')
+main.classList.add('content');
 
 main.appendChild(navbar);
 main.appendChild(home);

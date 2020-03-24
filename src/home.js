@@ -1,5 +1,5 @@
 import './css/home.css';
-import Home from './home.jpg';
+import Home from './img/home.jpg';
 
 const homeImg = new Image();
 homeImg.src = Home;

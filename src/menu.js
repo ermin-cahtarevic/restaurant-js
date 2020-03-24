@@ -1,7 +1,7 @@
 import './css/menu.css';
-import Burger from './burger.svg';
-import Hotdog from './hotdog.svg';
-import Steak from './steak.svg';
+import Burger from './img/burger.svg';
+import Hotdog from './img/hotdog.svg';
+import Steak from './img/steak.svg';
 
 const menuContent = document.createElement('div');
 const h3 = document.createElement('h3');
