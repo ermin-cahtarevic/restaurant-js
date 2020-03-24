@@ -32,33 +32,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
-.home-content {
-  background-color: rgba(0, 0, 0, 0.85);
-  width: 70%;
-  height: 500px;
-  margin: 0 75px 0 0;
-  border-radius: 7px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.home h1:hover {
+  cursor: pointer;
+  border-color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.red-text {
-  color: #98090D;
-  font-size: 18px;
-}
-
-.tagline {
-  color: white;
-  font-size: 20px;
-  margin: 30px 0 50px;
-}
-
-.h4 {
-  padding: 10px 40px;
-  color: white;
-  line-height: 1.5;
-  font-size: 18px;
+.d-none {
+  display: none !important;
 }

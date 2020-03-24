@@ -1,22 +1,28 @@
 import render from './render';
 import navbar from './navbar';
 import home from './home';
-import Home from './home.jpg';
+import aboutContent from './about';
+import menuContent from './menu';
+import contactContent from './contact';
 
-const main = document.querySelector('.content');
-
-const homeImg = new Image();
-homeImg.src = Home;
-
-home.style.backgroundImage = "url('../dist/a2e90d25b3bbe36387f4042035ff8e0e.jpg')";
+const main = document.createElement('div');
+main.classList.add('content')
 
 main.appendChild(navbar);
 main.appendChild(home);
+home.appendChild(aboutContent);
+home.appendChild(menuContent);
+home.appendChild(contactContent);
 
 document.body.appendChild(main);
 
+const logo = document.querySelector('#logo');
 const btnContainer = document.querySelector('#btn-wrap');
 
+logo.addEventListener('click', () => {
+  window.location.reload(true);
+});
+
 btnContainer.addEventListener('click', (e) => {
-  console.log(e.target);
+  render(e.target);
 });
