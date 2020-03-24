@@ -5,24 +5,32 @@ import aboutContent from './about';
 import menuContent from './menu';
 import contactContent from './contact';
 
-const main = document.createElement('div');
-main.classList.add('content');
+const view = (() => {
+  const main = document.createElement('div');
+  main.classList.add('content');
 
-main.appendChild(navbar);
-main.appendChild(home);
-home.appendChild(aboutContent);
-home.appendChild(menuContent);
-home.appendChild(contactContent);
+  const updateView = () => {
+    main.appendChild(navbar);
+    main.appendChild(home);
+    home.appendChild(aboutContent);
+    home.appendChild(menuContent);
+    home.appendChild(contactContent);
 
-document.body.appendChild(main);
+    document.body.appendChild(main);
 
-const logo = document.querySelector('#logo');
-const btnContainer = document.querySelector('#btn-wrap');
+    const logo = document.querySelector('#logo');
+    const btnContainer = document.querySelector('#btn-wrap');
 
-logo.addEventListener('click', () => {
-  window.location.reload(true);
-});
+    logo.addEventListener('click', () => {
+      window.location.reload(true);
+    });
 
-btnContainer.addEventListener('click', (e) => {
-  render(e.target);
-});
+    btnContainer.addEventListener('click', (e) => {
+      render(e.target);
+    });
+  };
+
+  return { updateView };
+})();
+
+view.updateView();
