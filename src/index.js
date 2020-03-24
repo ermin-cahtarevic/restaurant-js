@@ -6,8 +6,7 @@ import menuContent from './menu';
 import contactContent from './contact';
 
 const view = (() => {
-  const main = document.createElement('div');
-  main.classList.add('content');
+  const main = document.querySelector('.content');
 
   const updateView = () => {
     main.appendChild(navbar);
